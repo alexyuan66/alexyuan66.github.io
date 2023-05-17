@@ -11277,8 +11277,8 @@ body {
 #myBtn4 {
   background-color: transparent;
   border-radius: 0.75rem;
-  border: 1px solid black;
-  color: black;
+  border: 1px solid #11202A;
+  color: #11202A;;
   padding: 7.5px;
   font-size: 12px;
   font-weight: bold;
@@ -11287,15 +11287,15 @@ body {
 }
 
 #myBtn4:hover {
-  background-color: black;
+  background-color: #11202A;
   color: white;
 }
 
 #myBtn5 {
   background-color: transparent;
   border-radius: 0.75rem;
-  border: 1px solid black;
-  color: black;
+  border: 1px solid #11202A;
+  color: #11202A;
   padding: 7.5px;
   font-size: 12px;
   font-weight: bold;
@@ -11304,15 +11304,15 @@ body {
 }
 
 #myBtn5:hover {
-  background-color: black;
+  background-color: #11202A;
   color: white;
 }
 
 #myBtn6 {
   background-color: transparent;
   border-radius: 0.75rem;
-  border: 1px solid black;
-  color: black;
+  border: 1px solid #11202A;
+  color: #11202A;
   padding: 7.5px;
   font-size: 12px;
   font-weight: bold;
@@ -11321,15 +11321,15 @@ body {
 }
 
 #myBtn6:hover {
-  background-color: black;
+  background-color: #11202A;
   color: white;
 }
 
 #myBtn7 {
   background-color: transparent;
   border-radius: 0.75rem;
-  border: 1px solid black;
-  color: black;
+  border: 1px solid #11202A;
+  color: #11202A;
   padding: 7.5px;
   font-size: 12px;
   font-weight: bold;
@@ -11338,7 +11338,7 @@ body {
 }
 
 #myBtn7:hover {
-  background-color: black;
+  background-color: #11202A;
   color: white;
 }
 
@@ -11390,6 +11390,7 @@ body {
   opacity: 0;
   transform: translateY(-30px);
   z-index: 2;
+  color: #11202A;
 }
 
 .experience-container.animate {
