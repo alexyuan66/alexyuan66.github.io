@@ -11036,7 +11036,7 @@ body {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #809DAF;
   }
   #mainNav.navbar-shrink .nav-link:active {
     color: #467370;
@@ -11114,6 +11114,7 @@ body {
 .about-section {
   padding-top: 2rem;
   background: #11202A;
+  padding-bottom: 5rem;
   /* border-bottom: double rgba(255, 255, 255, 0.5); */
 }
 
@@ -11148,8 +11149,8 @@ body {
 }
 
 .education-section {
-  padding-top: 1.5rem;
-  padding-bottom: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 7.5rem;
   background: #11202A;
 }
 
@@ -11343,7 +11344,7 @@ body {
 }
 
 .experience-section {
-  padding-top: 1.5rem;
+  padding-top: 2rem;
   padding-bottom: 7.5rem;
   background: #11202A;
 }
