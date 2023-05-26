@@ -11195,7 +11195,7 @@ body {
 
 .education-section img {
   height:auto;
-  width: 75px;
+  width: 60px;
 }
 
 .education-section li {
@@ -11203,15 +11203,21 @@ body {
 }
 
 #more {
-  display: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s ease;
 }
 
 #more2 {
-  display: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s ease;
 }
 
 #more3 {
-  display: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s ease;
 }
 
 #more4 {
