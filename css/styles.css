@@ -11232,6 +11232,12 @@ body {
 #more7 {
   display: none;
 }
+#more8 {
+  display: none;
+}
+#more9 {
+  display: none;
+}
 
 #myBtn {
   background-color: transparent;
@@ -11345,6 +11351,40 @@ body {
 }
 
 #myBtn7:hover {
+  background-color: #11202A;
+  color: white;
+}
+
+#myBtn8 {
+  background-color: transparent;
+  border-radius: 0.75rem;
+  border: 1px solid #11202A;
+  color: #11202A;
+  padding: 7.5px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: capitalize;
+  display: block
+}
+
+#myBtn8:hover {
+  background-color: #11202A;
+  color: white;
+}
+
+#myBtn9 {
+  background-color: transparent;
+  border-radius: 0.75rem;
+  border: 1px solid #11202A;
+  color: #11202A;
+  padding: 7.5px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: capitalize;
+  display: block
+}
+
+#myBtn9:hover {
   background-color: #11202A;
   color: white;
 }
@@ -11523,7 +11563,14 @@ body {
 .project-section {
   padding-top: 2rem;
   background: #11202A;
+  width: 100%;
   padding-bottom: 7.5rem;
+}
+
+.project-main {
+  width: 1500px;
+  max-width: 80%;
+  /* background-color: green; */
 }
 
 .project-main h1 {
@@ -11534,7 +11581,7 @@ body {
 }
 
 .project-card {
-  box-shadow: 0 9px 24px rgba(0,0,0,.5);
+  /* box-shadow: 0 9px 24px rgba(0,0,0,.5); */
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -11544,23 +11591,21 @@ body {
   padding: 25px;
   text-align: left;
   margin-bottom: 3.5%;
-  background-color: #172D3B;
+  /* background-color: #172D3B; */
 }
 
 .project-text {
   align-content: center;
   display: grid;
-  flex: 1 4 20%;
-  padding: 16px 32px;
+  padding-right: 32px;
 }
 
 .project-title {
   text-align: center;
   color: white;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
-  width:100%;
   margin-bottom: 5%;
 }
 
@@ -11646,7 +11691,8 @@ body {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 80%;
+  width: 1130px;
+  max-width: 80%;
   display: flex;
 }
 
@@ -11671,4 +11717,18 @@ body {
   display: inline;
   margin-right: 20px;
   font-size: 16px;
+}
+
+.swiper-navBtn {
+  color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: white;
+}
+
+.swiper-navBtn:hover {
+  color: #172D3B;
+  background: white;
 }

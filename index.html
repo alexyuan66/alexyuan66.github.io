@@ -15,6 +15,8 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -42,9 +44,9 @@
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase">Alexander Yuan</h1>
-                        <h2 class="text-white-50 mx-auto mt-2">Hardware and Software Development Intern @ NASA</h2>
-                        <h3 class="text-white-50 mx-auto mt-2 mb-5">B.S./M.S. Computer Science | B.A. Economics @ Yale University</h3>
-                        <a class="btn btn-primary" href="./assets/Resume-Alex_Yuan_2023_Updated6.pdf" target="_blank">Download Resume</a>
+                        <h2 class="text-white-50 mx-auto mt-2">Software Engineering Intern @ SpaceX</h2>
+                        <h3 class="text-white-50 mx-auto mt-2 mb-5">Computer Science @ Yale University</h3>
+                        <a class="btn btn-primary" href="./assets/Alexander_Yuan_Resume2024_Fall3.pdf" target="_blank">Download Resume</a>
                     </div>
                 </div>
             </div>
@@ -56,12 +58,8 @@
                 <div class="about-text">
                     <h1>About Me</h1>
                     <p>
-                        Hi! Welcome to my personal website. This page is currently still under construction, but in the meantime, 
-                        here's a little about me.
-                    </p>
-                    <p>
-                        I am currently a junior at Yale University pursuing a B.S./M.S. in Computer Science and a B.A. in 
-                        Economics. College has been a time of great discovery and challenge in every possible way, and I have explored 
+                        Hi, welcome to my personal website!
+                        I am currently a junior at Yale University pursuing a B.S. in Computer Science. College has been a time of great discovery and challenge in every possible way, and I have explored 
                         numerous fields and interests during my time here. It has allowed me to discover what I am truly passionate about, and while 
                         they may change, my current interests include neural networks/machine learning, object-oriented design, full-stack 
                         web development, and econometrics.
@@ -82,11 +80,11 @@
                     <div class="education-text">
                         <span>Aug 2021 - Exp. May 2025</span>
                         <h2>Yale University</h2>
-                        <h3>Pursuing B.S./M.S. Computer Science and B.A. Economics</h3>
+                        <h3>Bachelor of Science in Computer Science</h3>
                         <div id="more">
                             <ul>
                                 <li>
-                                    GPA: 3.9/4.0; Major-4.0/4.0               
+                                    GPA: 3.92/4.0; Major: 4.0/4.0               
                                 </li>
                                 <li>
                                     Activities and societies: Yale Men's Water Polo Team, Code Haven, Yale Computer Society, YHack, Yale Undergraduate Diversified Investments, Yale Machine Learning, Mathcounts Outreach
@@ -97,21 +95,17 @@
                                         <li>CPSC 201: Introduction to Computer Science</li>
                                         <li>CPSC 202: Mathematical Tools for Computer Science</li>
                                         <li>CPSC 223: Data Structures and Programming Techniques</li>
+                                        <li>CPSC 290: Directed Research</li>
                                         <li>CPSC 323: Introduction to Systems Programming & Computer Organization</li>
                                         <li>CPSC 327: Object-Oriented Programming</li>
                                         <li>CPSC 365: Algorithms</li>
                                         <li>CPSC 419: Full Stack Web Programming</li>
+                                        <li>CPSC 465: Theory of Distributed Systems</li>
                                         <li>CPSC 484: Human-Computer Interaction</li>
-                                        <li>CPSC 440: Database Design and Implementation (In Progress)</li>
-                                        <li>CPSC 465: Theory of Distributed Systems (In Progress)</li>
-                                        <li>CPSC 474: Computational Intelligence for Games (In Progress)</li>
-                                            
-                                        <li>ECON 117: Introduction to Data Analysis and Econometrics</li>
-                                        <li>ECON 121: Intermediate Microeconomics</li>
-                                        <li>ECON 122: Intermediate Macroeconomics</li>
-                                        <li>ECON 123: Intermediate Data Analysis and Econometrics</li>
-                                        <li>ECON 159: Game Theory (In Progress)</li>
-                                        <li>ECON 365: Algorithms</li>
+                                        <li>CPSC 522: Operating Systems</li>
+                                        <li>CPSC 540: Database Design and Implementation</li>
+                                        <li>CPSC 574: Computational Intelligence for Games</li>
+                                        <li>CPSC 581: Introduction to Machine Learning</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -191,14 +185,48 @@
                 <h1>Experience</h1>
                 <div class="timeline">
                     <div class="experience-container left-container">
+                        <img src="assets/img/spacex.png">
+                        <div class="text-box">
+                            <h2>Software Engineering Intern</h2>
+                            <h3 style="margin-bottom: 0;">SpaceX</h3>
+                            <small>May 2024 - Present</small>
+                            <div id="more8">
+                                <ul>
+                                    <li>Starlink Team</li>
+                                </ul>
+                            </div>
+                            <button onclick="myFunction8()" id="myBtn8">Read more</button>
+                            <span class="left-container-arrow"></span>
+                        </div>
+                    </div>
+                    <div class="experience-container right-container">
+                        <img src="assets/img/square_logo_large.png">
+                        <div class="text-box">
+                            <h2>Algorithms Teaching Assistant</h2>
+                            <h3 style="margin-bottom: 0;">Yale Department of Computer Science</h3>
+                            <small>Jan 2024 - May 2024</small>
+                            <div id="more9">
+                                <ul>
+                                    <li>Led sessions on algorithms for 150+ students, covering divide-and-conquer, graph, greedy, and dynamic programming</li>
+                                    <li>Used Python/Java to teach algorithm implementation and efficiency and PollEv for interactive learning and feedback</li>
+                                </ul>
+                            </div>
+                            <button onclick="myFunction9()" id="myBtn9">Read more</button>
+                            <span class="right-container-arrow"></span>
+                        </div>
+                    </div>
+                    <div class="experience-container left-container">
                         <img src="assets/img/NASA_logo.svg.webp">
                         <div class="text-box">
-                            <h2>Hardware and Software Development Intern</h2>
+                            <h2>Software Engineering Intern</h2>
                             <h3 style="margin-bottom: 0;">NASA - National Aeronotics and Space Administration</h3>
-                            <small>June 2023 - Present</small>
+                            <small>June 2023 - Aug 2023</small>
                             <div id="more4">
                                 <ul>
-                                    <li>Safety-Critical Avionics Systems Team</li>
+                                    <li>Developed an app end-to-end using C, C++, JSON, Linux, streaming, and Core Flight System (cFS) that predicts
+                                        the Remaining Useful Life of an autonomous drone's onboard battery and generates a real-time adaptive flight plan</li>
+                                    <li>Deployed code on FAA-NASA certified drone, achieving project goals within 1yr timeline for forest fire mitigation</li>
+                                    <li>Adhered to formal software development protocol for NASA's Class C: Mission Support Software flight approval</li>
                                 </ul>
                             </div>
                             <button onclick="myFunction4()" id="myBtn4">Read more</button>
@@ -208,15 +236,16 @@
                     <div class="experience-container right-container">
                         <img src="assets/img/logo.png">
                         <div class="text-box">
-                            <h2>Research Fellow</h2>
+                            <h2>Undergraduate Research Intern</h2>
                             <h3 style="margin-bottom: 0;">Yale Social Robotics Lab</h3>
-                            <small>June 2022 - Feb 2023</small>
+                            <small>May 2022 - Dec 2022</small>
                             <div id="more5">
                                 <ul>
                                     <li>Topic: Perception Technologies for a Socially Assistive Robot to Combat Anxiety with Prof. Brian Scassellati</li>
-                                    <li>Supported the design of Ommie, a novel robot that provides at-home support for people with anxiety to practice deep breathing.</li>
-                                    <li>Utilized Robot Operating System (ROS) and Python to integrate motor movement and sensors (IMU, Thermal and RGB Camera, Respiration Belt, Radar) within Ommie for data collection (first of its kind publicly available).</li>
-                                    <li>Built and developed CNN, LSTM, and GRU machine learning models for respiration phase recognition. </li>
+                                    <li>Worked on the feature rollout of Ommie, a robot that provides anxiety support through deep breathing exercises</li>
+                                    <li>Used Raspberry Pi, ROS, and Python to integrate sensors (IMU, Thermal and RGB Camera, Radar) within Ommie
+                                        for the creation of a custom dataset for deep breathing analysis–the first of its kind to be publicly available</li>
+                                    <li>Built long short-term memory and gated recurrent unit ML models using PyTorch for respiration phase recognition</li>
                                 </ul>
                             </div>
                             <button onclick="myFunction5()" id="myBtn5">Read more</button>
@@ -240,7 +269,7 @@
                             <span class="left-container-arrow"></span>
                         </div>
                     </div>
-                    <div class="experience-container right-container">
+                    <!-- <div class="experience-container right-container">
                         <img src="assets/img/florida-state-university-logo-png-transparent2.png">
                         <div class="text-box">
                             <h2>Research Assistant</h2>
@@ -256,49 +285,83 @@
                             <button onclick="myFunction7()" id="myBtn7">Read more</button>
                             <span class="right-container-arrow"></span>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
         <!-- Projects -->
         <section class="project-section" id="projects">
-            <div class="project-main">
+            <div class="project-main swiper mySwiper">
                 <h1>Projects</h1>
-                <div class="project-card">
-                    <div class="project-text">
-                        <h2 class="project-title">Yost and Yound</h2>
-                        <p class="project-description">
-                            Developed and deployed a full-stack web application that facilitates the returning of lost/found objects to their rightful owners among the Yale community.
-                        </p>
-                        <a class="project-button" href="https://gitfront.io/r/user-1602051/Nn6fgzgMEhxy/Yost-and-Yound/" target="_blank">DETAILS</a>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-text">
+                                <h2 class="project-title">Yost and Yound</h2>
+                                <p class="project-description">
+                                    A full-stack web application that facilitates the returning of lost/found objects to their rightful owners among the Yale community.
+                                </p>
+                                <a class="project-button" href="https://gitfront.io/r/user-1602051/Nn6fgzgMEhxy/Yost-and-Yound/" target="_blank">DETAILS</a>
+                            </div>
+                            <video width="60%" controls>
+                                <source src="./assets/img/yost_demo-1 (5).mp4" type="video/mp4">
+                            </video>
+                        </div>
                     </div>
-                    <video width="60%" controls>
-                        <source src="./assets/img/yost_demo-1 (5).mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="project-card">
-                    <div class="project-text">
-                        <h2 class="project-title">The Shell</h2>
-                        <p class="project-description">
-                            Designed the backend logic for the “Bash” Unix shell program using the fork/execvp model in C. Provided functionality for file redirection, pipelines, conditionals, backgrounding, subcommands, and reaping zombie processes.
-                        </p>
-                        <a class="project-button" href="https://github.com/alexyuan66/TheShell" target="_blank">DETAILS</a>
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-text">
+                                <h2 class="project-title">Cats4Wellness</h2>
+                                <p class="project-description">
+                                    A self-care platform that promotes mental well-being by encouraging users to engage in healthy habits and stress-reducing activities.
+                                </p>
+                                <a class="project-button" href="https://github.com/alexyuan66/CPSC484-Final-Project" target="_blank">DETAILS</a>
+                            </div>
+                            <video width="60%" controls>
+                                <source src="./assets/img/group39.mp4" type="video/mp4">
+                            </video>
+                        </div>
                     </div>
-                    <img width="60%" src="./assets/img/Screenshot 2023-05-16 145016.png">
-                </div>
-                <div class="project-card">
-                    <div class="project-text">
-                        <h2 class="project-title">Deep Learning to Predict Freezing of Gait in Patients with Parkinson’s Disease</h2>
-                        <p class="project-description">
-                            Developed Python deep learning models to predict “Freezing of Gait” (FOG) in Parkinson’s patients by analyzing patient motion data from the Daphnet FOG dataset, a public domain dataset.
-                        </p>
-                        <a class="project-button" href="https://github.com/alexyuan66/Deep_Recurrent_Neural_Networks_FoG" target="_blank">DETAILS</a>
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-text">
+                                <h2 class="project-title">Alpha-Gomoku</h2>
+                                <p class="project-description">
+                                    An implementation of the Gomoku game with an AI agent enhanced by Parallel Monte Carlo Tree Search and Genetic Algorithms with an 83% average win rate.
+                                </p>
+                                <a class="project-button" href="https://github.com/alexyuan66/alpha-gomoku" target="_blank">DETAILS</a>
+                            </div>
+                            <img width="60%" src="./assets/img/gomoku.jpg">
+                        </div>
                     </div>
-                    <img width="60%" src="./assets/img/Screenshot 2023-05-16 151410.png">
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-text">
+                                <h2 class="project-title">The Shell</h2>
+                                <p class="project-description">
+                                    The backend logic for the “Bash” Unix shell program using the fork/execvp model in C with functionality for file redirection, pipelines, conditionals, backgrounding, subcommands, and reaping zombie processes.
+                                </p>
+                                <a class="project-button" href="https://github.com/alexyuan66/TheShell" target="_blank">DETAILS</a>
+                            </div>
+                            <img width="60%" src="./assets/img/Screenshot 2023-05-16 145016.png">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="project-text">
+                                <h2 class="project-title">Deep Learning for Predicting Parkinson's Disease</h2>
+                                <p class="project-description">
+                                    LSTM and GRU deep learning models that achieve a 95% accuracy rate in predicting Parkinson’s ”Freezing of Gait” (FOG) by analyzing motion data from the Daphnet FOG dataset.
+                                </p>
+                                <a class="project-button" href="https://github.com/alexyuan66/Deep_Recurrent_Neural_Networks_FoG" target="_blank">DETAILS</a>
+                            </div>
+                            <img width="60%" src="./assets/img/Screenshot 2023-05-16 151410.png">
+                        </div>
+                    </div>
                 </div>
-                <div style="text-align: center;">
-                    <a href="https://github.com/alexyuan66" class="projects-link" target="_blank">View More</a>
-                </div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
         <!-- Skills -->
@@ -308,26 +371,35 @@
                 <ul>
                     <li>C</li>
                     <li>C++</li>
-                    <li>C#</li>
                     <li>Java</li>
                     <li>Python</li>
                     <li>R</li>
                     <li>Flask</li>
-                    <li>Jinja</li>
+                    <li>Jinja2</li>
                     <li>Node.js</li>
                     <li>React</li>
+                    <li>Express</li>
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
-                    <li>JQuery</li>
+                    <li>jQuery</li>
                     <li>SQL</li>
                     <li>Sqlite3</li>
                     <li>SQLAlchemy</li>
                     <li>Git</li>
+                    <li>Github/Bitbucket</li>
+                    <li>AWS</li>
+                    <li>Jupyter Notebook</li>
                     <li>Unix</li>
                     <li>Windows</li>
                     <li>ROS</li>
                     <li>Racket</li>
+                    <li>Latex</li>
+                    <li>VS Code</li>
+                    <li>Eclipse</li>
+                    <li>Figma</li>
+                    <li>Jira</li>
+                    <li>Confluence</li>
                 </ul>
             </div>
         </section>
@@ -335,7 +407,7 @@
         <footer class="footer-background">
             <div class="footer-container">
                 <div class="footer-column">
-                    <p>Copyright © 2023 Alexander Yuan</p>
+                    <p>Copyright © 2024 Alexander Yuan</p>
                 </div>
                 <div class="footer-column" style="text-align: right;">
                     <ul>
@@ -360,90 +432,26 @@
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!-- swiper-js -->
+        <script src="js/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
         <script>
-            const experienceContainers = document.querySelectorAll('.experience-container');
-
-            const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                entry.target.classList.add('animate');
-                } else {
-                entry.target.classList.remove('animate');
-                }
+            var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetwee: 25,
+            loop: true,
+            centerSlide: 'true',
+            fade: 'true',
+            gragCursor: 'true',
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
             });
-            });
-
-            experienceContainers.forEach(container => {
-            observer.observe(container);
-            });
-            function myFunction4() {
-                var moreText = document.getElementById("more4");
-                var btnText = document.getElementById("myBtn4");
-                
-                if (btnText.innerHTML === "Read less") {
-                    btnText.innerHTML = "Read more"; 
-                    moreText.style.display = "none";
-                } else {
-                    btnText.innerHTML = "Read less"; 
-                    moreText.style.display = "inline";
-                }
-            }
-            function myFunction5() {
-                var moreText = document.getElementById("more5");
-                var btnText = document.getElementById("myBtn5");
-                
-                if (btnText.innerHTML === "Read less") {
-                    btnText.innerHTML = "Read more"; 
-                    moreText.style.display = "none";
-                } else {
-                    btnText.innerHTML = "Read less"; 
-                    moreText.style.display = "inline";
-                }
-            }
-            function myFunction6() {
-                var moreText = document.getElementById("more6");
-                var btnText = document.getElementById("myBtn6");
-                
-                if (btnText.innerHTML === "Read less") {
-                    btnText.innerHTML = "Read more"; 
-                    moreText.style.display = "none";
-                } else {
-                    btnText.innerHTML = "Read less"; 
-                    moreText.style.display = "inline";
-                }
-            }
-            function myFunction7() {
-                var moreText = document.getElementById("more7");
-                var btnText = document.getElementById("myBtn7");
-                
-                if (btnText.innerHTML === "Read less") {
-                    btnText.innerHTML = "Read more"; 
-                    moreText.style.display = "none";
-                } else {
-                    btnText.innerHTML = "Read less"; 
-                    moreText.style.display = "inline";
-                }
-            }
-
-            $(document).ready(function() {
-                $(".education-block").hover(function() {
-                    $("#more", this).css("max-height", "500px");
-                }, function() {
-                    $("#more", this).css("max-height", "0");
-                });
-                $(".education-block").hover(function() {
-                    $("#more2", this).css("max-height", "500px");
-                }, function() {
-                    $("#more2", this).css("max-height", "0");
-                });
-                $(".education-block").hover(function() {
-                    $("#more3", this).css("max-height", "500px");
-                }, function() {
-                    $("#more3", this).css("max-height", "0");
-                });
-            });
-
         </script>
     </body>
 </html>

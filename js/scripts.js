@@ -52,3 +52,109 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+const experienceContainers = document.querySelectorAll('.experience-container');
+
+const observer = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+    if (entry.isIntersecting) {
+    entry.target.classList.add('animate');
+    } else {
+    entry.target.classList.remove('animate');
+    }
+});
+});
+
+experienceContainers.forEach(container => {
+observer.observe(container);
+});
+function myFunction4() {
+    var moreText = document.getElementById("more4");
+    var btnText = document.getElementById("myBtn4");
+    
+    if (btnText.innerHTML === "Read less") {
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+    } else {
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+    }
+}
+function myFunction5() {
+    var moreText = document.getElementById("more5");
+    var btnText = document.getElementById("myBtn5");
+    
+    if (btnText.innerHTML === "Read less") {
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+    } else {
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+    }
+}
+function myFunction6() {
+    var moreText = document.getElementById("more6");
+    var btnText = document.getElementById("myBtn6");
+    
+    if (btnText.innerHTML === "Read less") {
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+    } else {
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+    }
+}
+function myFunction7() {
+    var moreText = document.getElementById("more7");
+    var btnText = document.getElementById("myBtn7");
+    
+    if (btnText.innerHTML === "Read less") {
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+    } else {
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+    }
+}
+function myFunction8() {
+    var moreText = document.getElementById("more8");
+    var btnText = document.getElementById("myBtn8");
+    
+    if (btnText.innerHTML === "Read less") {
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+    } else {
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+    }
+}
+function myFunction9() {
+    var moreText = document.getElementById("more9");
+    var btnText = document.getElementById("myBtn9");
+    
+    if (btnText.innerHTML === "Read less") {
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+    } else {
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+    }
+}
+
+$(document).ready(function() {
+    $(".education-block").hover(function() {
+        $("#more", this).css("max-height", "500px");
+    }, function() {
+        $("#more", this).css("max-height", "0");
+    });
+    $(".education-block").hover(function() {
+        $("#more2", this).css("max-height", "500px");
+    }, function() {
+        $("#more2", this).css("max-height", "0");
+    });
+    $(".education-block").hover(function() {
+        $("#more3", this).css("max-height", "500px");
+    }, function() {
+        $("#more3", this).css("max-height", "0");
+    });
+});
