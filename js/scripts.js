@@ -53,8 +53,8 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+// Experience animation
 const experienceContainers = document.querySelectorAll('.experience-container');
-
 const observer = new IntersectionObserver(entries => {
 entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -64,10 +64,67 @@ entries.forEach(entry => {
     }
 });
 });
-
 experienceContainers.forEach(container => {
-observer.observe(container);
+    observer.observe(container);
 });
+
+// Skills blue bar animation
+const pathElements = Array.from(document.querySelectorAll('*')).filter((el) =>
+    Array.from(el.classList).some((cls) => cls.startsWith('path-'))
+  );
+const observer2 = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+        console.log("here")
+        if (entry.isIntersecting) {
+            const pathClass = Array.from(entry.target.classList).find((cls) =>
+              cls.startsWith('path-')
+            );
+            if (pathClass) {
+              let animationName;
+              if (pathClass === 'path-1' || pathClass === 'path-2' || pathClass === 'path-3' || pathClass === 'path-17' || pathClass === 'path-21' || pathClass === 'path-23' || pathClass === 'path-24') {
+                animationName = 'animate-path1';
+              } else if (pathClass === 'path-4' || pathClass === 'path-8' || pathClass === 'path-11' || pathClass === 'path-18' || pathClass === 'path-22') {
+                animationName = 'animate-path2';
+              } else if (pathClass === 'path-5' || pathClass === 'path-6' || pathClass === 'path-9' || pathClass === 'path-10' || pathClass === 'path-12' || pathClass === 'path-13' || pathClass === 'path-14' || pathClass === 'path-19' || pathClass === 'path-20') {
+                animationName = 'animate-path3';
+              } else if (pathClass === 'path-7' || pathClass === 'path-15' || pathClass === 'path-16') {
+                animationName = 'animate-path4';
+              }
+              entry.target.style.animation = `${animationName} 0.75s 0.75s linear forwards`;
+            }
+        }
+        else {
+            entry.target.style.animation = 'none';
+        }
+    });
+  },
+  {
+    threshold: 0.05,
+  }
+);
+
+pathElements.forEach((path) => observer2.observe(path));
+
+// Skills black bar animation
+const progressBars = document.querySelectorAll('.radial-bar .progress-bar');
+const observer3 = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.style.animation = 'animate-bar 0.75s linear forwards';
+      } else {
+        entry.target.style.animation = 'none';
+      }
+    });
+  },
+  {
+    threshold: 0.05,
+  }
+);
+progressBars.forEach((bar) => observer3.observe(bar));
+
+
 function myFunction4() {
     var moreText = document.getElementById("more4");
     var btnText = document.getElementById("myBtn4");

@@ -11657,16 +11657,37 @@ body {
   text-align: center;
 }
 
+.skills-section-2 {
+  padding-top: 2rem;
+  background: #11202A;
+  padding-bottom: 7.5rem;
+}
+
 .skills-main {
   width: 1130px;
   max-width: 80%;
   margin: 0 auto;
 }
 
+.skills-main-2 {
+  width: 1130px;
+  max-width: 80%;
+  margin: 0 auto;
+  color: white;
+  /* background: green; */
+}
+
 .skills-main h1 {
   color: white;
   font-weight: bold;
   padding-bottom: 2rem;
+}
+
+.skills-main-2 h1 {
+  color: white;
+  font-weight: bold;
+  padding-bottom: 2rem;
+  text-align: center;
 }
 
 .skills-main li {
@@ -11679,6 +11700,132 @@ body {
   cursor: default;
   font-size: 14px;
   font-weight: bold;
+}
+
+.radial-container {
+  display: flex; /* Arrange label and circles in a row */
+  align-items: flex-start; /* Align items at the top */
+  gap: 20px; /* Add spacing between label and circles */
+  padding-bottom: 80px;
+}
+
+.radial-label {
+  flex: 0 0 15%; /* Take up 15% of the row width */
+  text-align: left; /* Align the text to the left */
+  font-size: 14px;
+  font-weight: normal;
+  color: white;
+  line-height: 1.2;
+  margin-top: 25px;
+}
+
+.radial-bars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Distribute evenly with space in between */
+  gap: 10px;
+  /* background: blue; */
+  flex: 1;
+}
+
+.radial-bars .radial-bar {
+  width: calc(12.5% - 10px); /* Adjust width for 3 items per row with space */
+  max-width: 100px; /* Optional: cap the size */
+  /* background: red; */
+  height: 100px;
+  position: relative;
+}
+
+.radial-bar svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100px;
+  height: 100px; /* Adjust this if needed */
+}
+
+.radial-bar .progress-bar {
+  stroke-width: 10;
+  stroke: black;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+}
+
+@keyframes animate-bar{
+  100%{
+    stroke-dashoffset: -1;
+  }
+}
+
+.path{
+  stroke-width: 10;
+  stroke: #0ef;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+}
+
+/* .path-1{animation: animate-path1 1s 1s linear forwards;}
+.path-2{animation: animate-path1 1s 1s linear forwards;}
+.path-3{animation: animate-path1 1s 1s linear forwards;}
+.path-4{animation: animate-path2 1s 1s linear forwards;}
+.path-5{animation: animate-path3 1s 1s linear forwards;}
+.path-6{animation: animate-path3 1s 1s linear forwards;}
+.path-7{animation: animate-path4 1s 1s linear forwards;}
+.path-8{animation: animate-path2 1s 1s linear forwards;}
+.path-9{animation: animate-path3 1s 1s linear forwards;}
+.path-10{animation: animate-path3 1s 1s linear forwards;}
+.path-11{animation: animate-path2 1s 1s linear forwards;}
+.path-12{animation: animate-path3 1s 1s linear forwards;}
+.path-13{animation: animate-path3 1s 1s linear forwards;}
+.path-14{animation: animate-path3 1s 1s linear forwards;}
+.path-15{animation: animate-path4 1s 1s linear forwards;}
+.path-16{animation: animate-path4 1s 1s linear forwards;}
+.path-17{animation: animate-path1 1s 1s linear forwards;}
+.path-18{animation: animate-path2 1s 1s linear forwards;}
+.path-19{animation: animate-path3 1s 1s linear forwards;}
+.path-20{animation: animate-path3 1s 1s linear forwards;}
+.path-21{animation: animate-path1 1s 1s linear forwards;}
+.path-22{animation: animate-path2 1s 1s linear forwards;}
+.path-23{animation: animate-path1 1s 1s linear forwards;}
+.path-24{animation: animate-path1 1s 1s linear forwards;} */
+
+@keyframes animate-path1 {
+  100%{
+    stroke-dashoffset: 50;
+  }
+}
+
+@keyframes animate-path2 {
+  100%{
+    stroke-dashoffset: 175;
+  }
+}
+
+@keyframes animate-path3 {
+  100%{
+    stroke-dashoffset: 125;
+  }
+}
+
+@keyframes animate-path4 {
+  100%{
+    stroke-dashoffset: 250;
+  }
+}
+
+.radial-bar .text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 12px;
+  font-weight: 500;
+  animation: showText 0.5 1s linear forwards;
 }
 
 .footer-background {
