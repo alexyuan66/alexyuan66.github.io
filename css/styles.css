@@ -11115,7 +11115,6 @@ body {
   padding-top: 2rem;
   background: #11202A;
   padding-bottom: 5rem;
-  /* border-bottom: double rgba(255, 255, 255, 0.5); */
 }
 
 .about-section img{
@@ -11146,6 +11145,57 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+/* Responsive styles for tablets (screens < 768px) */
+@media (max-width: 768px) {
+  .about-main {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .about-section img {
+    width: 200px;
+  }
+
+  .about-text {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .about-text h1 {
+    font-size: 24px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+  }
+}
+
+/* Responsive styles for phones (screens < 480px) */
+@media (max-width: 480px) {
+  .about-main {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .about-section img {
+    width: 150px;
+  }
+
+  .about-text {
+    width: 95%;
+  }
+
+  .about-text h1 {
+    font-size: 20px;
+  }
+
+  .about-text p {
+    font-size: 12px;
+  }
 }
 
 .education-section {
@@ -11570,7 +11620,6 @@ body {
 .project-main {
   width: 1500px;
   max-width: 80%;
-  /* background-color: green; */
 }
 
 .project-main h1 {
@@ -11581,7 +11630,6 @@ body {
 }
 
 .project-card {
-  /* box-shadow: 0 9px 24px rgba(0,0,0,.5); */
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -11591,7 +11639,6 @@ body {
   padding: 25px;
   text-align: left;
   margin-bottom: 3.5%;
-  /* background-color: #172D3B; */
 }
 
 .project-text {
@@ -11648,6 +11695,80 @@ body {
 .projects-link:hover {
   color: #11202A;
   background: white;
+}
+
+/* Responsive Styles for Medium Screens (Tablets < 768px) */
+@media (max-width: 768px) {
+  .project-main {
+    max-width: 90%;
+  }
+
+  .project-card {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .project-text {
+    padding: 0;
+  }
+
+  .project-title {
+    font-size: 20px;
+  }
+
+  .project-description {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .project-button {
+    margin-top: 15px;
+  }
+
+  video, img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 15px;
+  }
+}
+
+/* Responsive Styles for Small Screens (Phones < 480px) */
+@media (max-width: 480px) {
+  .project-main {
+    max-width: 100%;
+  }
+
+  .project-card {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .project-title {
+    font-size: 18px;
+  }
+
+  .project-description {
+    font-size: 12px;
+  }
+
+  .project-button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  video, img {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 10px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev,
+  .swiper-pagination {
+    display: none;
+  }
 }
 
 .skills-section {
@@ -11722,16 +11843,14 @@ body {
 .radial-bars {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly; /* Distribute evenly with space in between */
+  justify-content: space-evenly;
   gap: 10px;
-  /* background: blue; */
   flex: 1;
 }
 
 .radial-bars .radial-bar {
-  width: calc(12.5% - 10px); /* Adjust width for 3 items per row with space */
-  max-width: 100px; /* Optional: cap the size */
-  /* background: red; */
+  width: calc(12.5% - 10px);
+  max-width: 100px;
   height: 100px;
   position: relative;
 }
@@ -11742,7 +11861,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%) rotate(-90deg);
   width: 100px;
-  height: 100px; /* Adjust this if needed */
+  height: 100px;
 }
 
 .radial-bar .progress-bar {
@@ -11768,31 +11887,6 @@ body {
   stroke-dashoffset: 502;
   stroke-linecap: round;
 }
-
-/* .path-1{animation: animate-path1 1s 1s linear forwards;}
-.path-2{animation: animate-path1 1s 1s linear forwards;}
-.path-3{animation: animate-path1 1s 1s linear forwards;}
-.path-4{animation: animate-path2 1s 1s linear forwards;}
-.path-5{animation: animate-path3 1s 1s linear forwards;}
-.path-6{animation: animate-path3 1s 1s linear forwards;}
-.path-7{animation: animate-path4 1s 1s linear forwards;}
-.path-8{animation: animate-path2 1s 1s linear forwards;}
-.path-9{animation: animate-path3 1s 1s linear forwards;}
-.path-10{animation: animate-path3 1s 1s linear forwards;}
-.path-11{animation: animate-path2 1s 1s linear forwards;}
-.path-12{animation: animate-path3 1s 1s linear forwards;}
-.path-13{animation: animate-path3 1s 1s linear forwards;}
-.path-14{animation: animate-path3 1s 1s linear forwards;}
-.path-15{animation: animate-path4 1s 1s linear forwards;}
-.path-16{animation: animate-path4 1s 1s linear forwards;}
-.path-17{animation: animate-path1 1s 1s linear forwards;}
-.path-18{animation: animate-path2 1s 1s linear forwards;}
-.path-19{animation: animate-path3 1s 1s linear forwards;}
-.path-20{animation: animate-path3 1s 1s linear forwards;}
-.path-21{animation: animate-path1 1s 1s linear forwards;}
-.path-22{animation: animate-path2 1s 1s linear forwards;}
-.path-23{animation: animate-path1 1s 1s linear forwards;}
-.path-24{animation: animate-path1 1s 1s linear forwards;} */
 
 @keyframes animate-path1 {
   100%{
@@ -11825,7 +11919,71 @@ body {
   transform: translate(-50%,-50%);
   font-size: 12px;
   font-weight: 500;
-  animation: showText 0.5 1s linear forwards;
+}
+
+/* Responsive Styles for Medium Screens (e.g., Tablets < 768px) */
+@media (max-width: 768px) {
+  .radial-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 40px;
+  }
+
+  .radial-label {
+    flex: 0 0 auto;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .radial-bars {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .radial-bars .radial-bar {
+    width: calc(25% - 20px);
+    max-width: 80px;
+    height: 80px;
+    margin: 10px;
+  }
+
+  .radial-bar svg {
+    width: 80px;
+    height: 80px;
+  }
+
+  .radial-bar .text {
+    font-size: 10px;
+  }
+}
+
+/* Responsive Styles for Small Screens (e.g., Phones < 480px) */
+@media (max-width: 480px) {
+  .radial-label {
+    font-size: 14px;
+  }
+
+  .radial-bars {
+    gap: 30px;
+  }
+
+  .radial-bars .radial-bar {
+    width: calc(50% - 20px);
+    max-width: 70px;
+    height: 70px;
+    margin: 15px;
+  }
+
+  .radial-bar svg {
+    width: 70px;
+    height: 70px;
+  }
+
+  .radial-bar .text {
+    font-size: 8px;
+  }
 }
 
 .footer-background {
